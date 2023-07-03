@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>АДАПТИВНОЕ МНОГОУРОВНЕВОЕ ГОРИЗОНТАЛЬНОЕ МЕНЮ НА CSS + JQUERY</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="navbar-logo">
+				<a href="" class="logo">
+					<img class="icon_logo" src="images/icon_logo.png" alt="">
+
+					<div class="logo-title">
+						<img src="images/logo-fip.png" alt="">
+					</div>
+					<div class="line"></div>
+					<p class="sti-logo">СЕВЕРСКИЙ ТЕХНОЛОГИЧЕСКИЙ<br>ИНСТИТУТ НИЯУ МИФИ</p>
+				</a>
+
+				<div class="appeal">
+					<a href="" class="even-week">ЧЕТНАЯ НЕДЕЛЯ</a>
+					<a href="" class="btn-appeal">
+						<div class="btn-appeal">ОБРАЩЕНИЕ</div>
+					</a>
+					<a href="" class="eng"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+							fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+							<path
+								d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+							<path
+								d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+						</svg></a>
+
+
+					<div class="burger-eng">
+						<!-- <button id="hamb" onclick="switchLang()">EN</button> -->
+						<div class="toggleMenu"><a href="#"><img src="images/burger.png" alt=""></a></div>
+					</div>
+
+
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-search" viewBox="0 0 16 16">
+						<path
+							d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+					</svg>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="menu-top">
+			<div class="container">
+				<div id='cssmenu'>
+					<ul>
+						
+						<li class='active'><a href='#'>Поступающим</a>
+							<ul>
+								<li><a href='#'>Product 1</a>
+									<ul>
+										<li><a href='#'>Sub Product</a></li>
+										<li><a href='#'>Sub Product</a>
+											<ul>
+												<li><a href='#'>Sub Product</a></li>
+												<li><a href='#'>Sub Product</a></li>
+												<li><a href='#'>Sub Product</a></li>
+											</ul>
+										</li>
+										<li><a href='#'>Sub Product</a></li>
+										<li><a href='#'>Sub Product</a></li>
+										<li><a href='#'>Sub Product</a></li>
+										<li><a href='#'>Sub Product</a></li>
+										<li><a href='#'>Sub Product</a></li>
+									</ul>
+								</li>
+								<li><a href='#'>Product 2</a>
+									<ul>
+										<li><a href='#'>Sub Product</a></li>
+										<li><a href='#'>Sub Product</a></li>
+									</ul>
+								</li>
+								<li><a href='#'>Product 3</a></li>
+							</ul>
+						</li>
+						<li class='active'><a href='#'>Обучающимся</a>
+							<ul>
+								<li><a href='#'>Product 1</a>
+									<ul>
+										<li><a href='#'>Sub Product</a></li>
+										<li><a href='#'>Sub Product</a>
+											<ul>
+												<li><a href='#'>Sub Product</a></li>
+												<li><a href='#'>Sub Product</a></li>
+												<li><a href='#'>Sub Product</a></li>
+											</ul>
+										</li>
+										<li><a href='#'>Sub Product</a></li>
+										<li><a href='#'>Sub Product</a></li>
+										<li><a href='#'>Sub Product</a></li>
+										<li><a href='#'>Sub Product</a></li>
+										<li><a href='#'>Sub Product</a></li>
+									</ul>
+								</li>
+								<li><a href='#'>Product 2</a>
+									<ul>
+										<li><a href='#'>Sub Product</a></li>
+										<li><a href='#'>Sub Product</a></li>
+									</ul>
+								</li>
+								<li><a href='#'>Product 3</a></li>
+							</ul>
+						</li>
+						<li class='active'><a href='#'>Преподавателям и сотрудникам</a>
+							<ul>
+								<li><a href='http://www.ssti.ru/union.html'>«Профсоюз»</a></li>
+								<li><a href='https://www.gosuslugi.ru/'>Интернет-портал государственных услуг</a></li>
+								<li><a href='https://edu.ssti.ru/'>Образовательный потрал СТИ НИЯУ МИФИ</a></li>
+								<li><a href='https://tessa.ssti.ru/login'>Система электронного документооборота TESSA</a></li>
+								<li><a href=''>Выборы и конкурсы</a></li>
+								<li><a href='http://www.ssti.ru/collection.html'>«Ресурсы Интернет»</a></li>
+							</ul>
+						</li>
+						<li class='active'><a href='#'>Выпускникам</a>
+							<ul>
+								<li><a href='http://www.ssti.ru/center.html'>Центр карьеры</a></li>
+							</ul>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="menu-bottom">
+
+			<div class="container">
+				<ul class="menu">
+					<li><a href="#">Поступающим</a>
+						<ul>
+							<li class="width"><a href="#">test</a>
+								<ul>
+									<li><a href="#">test1</a></li>
+									<li><a href="#">test2</a></li>
+									<li><a href="#">test3</a></li>
+								</ul>
+							</li>
+							<li><a href="#">test</a>
+								<ul>
+									<li><a href="#">test1</a></li>
+									<li><a href="#">test2</a></li>
+									<li><a href="#">test3</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">Обучающимя</a>
+						<ul>
+							<li><a href="#">test</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Преподователям и сотрудникам</a>
+						<ul>
+							<li><a href="#">test</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Выпускникам</a>
+						<ul>
+							<li><a href="#">test</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+
+
+
+	</header>
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>
